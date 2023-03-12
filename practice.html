@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="w-full h-screen">
+        <div class="flex container mx-auto  align-middle items-center justify-between mb-6">
+            <div>
+                <h5 class="gold-text">Featured Projects</h5>
+                <h2 class="my-6 blue-text">Where happiness lives</h2>
+            </div>
+            <div>
+                <a class="link" href="">View All Projects</a>
+            </div>
+        </div>
+        <!---featured properties gallery-->
+        <div class="grid md:grid-cols-3 md:h-full">
+            <!---first row--->
+            <div class=" md:grid grid-rows-5 md:h-full">
+                <div class="md:row-span-2 ">
+                  <a href="" class="h-full featured-property-link relative">
+                      <div style="background-image: url('./img/property5.jpg');" class="h-full bg-cover bg-no-repeat px-6 flex justify-end flex-col bg-center featured-property-img relative overflow-hidden">
+                        <div class="featured-property-text">
+                            <h3 class="text-white mb-3">Property 1</h3>
+                            <p class="text-white">Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+                <div class="md:row-span-3 ">
+                  <a href="" class="h-full featured-property-link relative">
+                      <div style="background-image: url('./img/property6.jpg');" class="h-full bg-cover bg-no-repeat px-6 flex justify-end flex-col bg-center featured-property-img relative overflow-hidden">                        
+                          <h3 class="text-white mb-3">Property 1</h3>
+                          <p class="text-white">Lorem ipsum, dolor sit amet consectetur</p>
+                      </div>
+                  </a>
+                </div>
+              </div>
+            <!---second row--->
+            <div class=" md:grid grid-rows-5 md:h-full">
+              <div class="md:row-span-3 ">
+                <a href="" class="h-full featured-property-link relative">
+                    <div style="background-image: url('./img/property3.jpg');" class="h-full bg-cover  bg-no-repeat flex justify-end flex-col px-6 py-2 bg-center featured-property-img relative overflow-hidden">
+                        <h3 class="text-white mb-3">Property 3</h3>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                </a>
+              </div>
+              <div class="md:row-span-2 ">
+                <a href="" class="h-full featured-property-link relative">
+                    <div style="background-image: url('./img/property4.jpg');" class="h-full bg-cover bg-no-repeat flex justify-end flex-col px-6 py-2 bg-center featured-property-img relative overflow-hidden">
+                        <h3 class="text-white mb-3">Property 3</h3>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+            <!---third row--->
+            <div class=" md:grid grid-rows-5 md:h-full">
+              <div class="md:row-span-2 ">
+                <a href="" class="h-full featured-property-link relative">
+                    <div style="background-image: url('./img/property5.jpg');" class="h-full bg-cover bg-no-repeat px-6 flex justify-end flex-col bg-center featured-property-img relative overflow-hidden">
+                        <h3 class="text-white mb-3">Property 1</h3>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                </a>
+              </div>
+              <div class="md:row-span-3 ">
+                <a href="" class="h-full featured-property-link relative">
+                    <div style="background-image: url('./img/property6.jpg');" class="h-full bg-cover bg-no-repeat px-6 flex justify-end flex-col bg-center featured-property-img relative overflow-hidden">
+                        <h3 class="text-white mb-3">Property 1</h3>
+                        <p class="text-white" id="#try">Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <script>
+      const element = document.querySelector("text-white");
+      console.log("+"+element);
+    </script>
+</body>
+</html>
