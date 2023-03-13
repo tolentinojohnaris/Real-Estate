@@ -1135,7 +1135,7 @@ button{
 }
 
 .testimonial-section{
-  background-image: url('../dist/img/img1.jpg');
+  background-image: url('./img/property6.jpg'');
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
