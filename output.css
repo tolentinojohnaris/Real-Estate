@@ -1124,7 +1124,7 @@ button{
 
 .homepage-intro:before{
   content: '';
-  background-image:url('../dist/img/img1.jpg');
+  background-image:url('./img/img1.jpg');
   filter: grayscale(1);
   opacity: 10%;
   width:100%;
