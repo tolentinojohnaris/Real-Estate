@@ -1,3 +1,11 @@
+//sidebar
+
+function sidebarBtnFunction(){
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("hidden");
+}
+
+
 //testimonial JS
 const testimonialCol = document.querySelector(".testimonial-col");
 const testimonialWrapper = document.getElementById("testimonial-wrapper");
