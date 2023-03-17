@@ -17,7 +17,7 @@
     <div class="flex justify-between container mx-auto w-full items-center">
         <a href=""><img src="./img/logo.svg" class="h-auto  w-56"></a>
         <ul class="lg:gap-x-10 md:gap-x-10 flex items-center text-white">
-            <li class="hidden md:flex font-medium text-sm py-10 navbar-link">Home</li>
+            <li class="hidden md:flex font-medium text-sm py-10 navbar-link hover:text-brand-gold">Home</li>
             <li class="hidden md:flex font-medium text-sm items-center gap-2 relative navbar-group cursor-pointer py-10 border-transparent border-t-4 ">About Us <i class="fa-solid fa-angle-down"></i>
                 <ul class="navbar-link navbar-sub absolute top-20 bg-white w-64 hidden p-5">
                     <li class="py-2 group"><a href="" class="text-black navbar-sub-link">Our Leaders</a></li>
@@ -25,10 +25,10 @@
                     <li class="py-2"><a href="" class="text-black">Awards & Recognitions</a></li>
                 </ul>
             </li>
-            <li class="navbar-link hidden md:flex font-medium text-sm">Properties</li>
-            <li class="navbar-link hidden md:flex font-medium text-sm">Blog</li>
-            <li class="navbar-link hidden md:flex font-medium text-sm">Contact</li>
-            <li class="navbar-link md:hidden flex"> <button id="sidebar_button" onclick="sidebarBtnFunction()">=</button></li>
+            <li class="navbar-link hidden md:flex font-medium text-sm hover:text-brand-gold">Properties</li>
+            <li class="navbar-link hidden md:flex font-medium text-sm hover:text-brand-gold">Blog</li>
+            <li class="navbar-link hidden md:flex font-medium text-sm hover:text-brand-gold">Contact</li>
+            <li class="navbar-link md:hidden flex"> <button id="sidebar_button border-0" onclick="sidebarBtnFunction()"><i class="fa-solid fa-bars"></i></button></li>
         </ul>
        
     </div>
@@ -55,12 +55,24 @@
                 <!---social icons-->
                 <div class="hidden absolute left-20 lg:flex items-center justify-center text-center w-10 transparent h-full flex-col">
                     <div class="border" style="height:20%; width: 1px;"></div>
-                    <ul class="flex flex-col gap-3 pt-3">
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
+                    <ul class="flex flex-col gap-6 pt-6">
+                        <li class="hover:text-brand-gold"><i class="fa-brands fa-facebook-f cursor-pointer"></i></li>
+                        <li class="hover:text-brand-gold"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="hover:text-brand-gold"><i class="fa-brands fa-youtube"></i></li>
                     </ul>
+                </div>
+                <!---homepage contact details-->
+                <div class="absolute bottom-10 w-full container">
+                    <div class="flex justify-between w-full md:flex-row flex-col md:items-center gap-3 md:gap-0">
+                        <div class="flex gap-3">
+                            <span class="border px-5 py-4 rounded-full float-left"><i class="fa-solid fa-phone"></i></span>
+                            <p class="text-left"><small>CALL US NOW</small><br><a href="tel:+639071922890" class="gold text-left">+(63)907 192 2890</a></p>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="border px-5 py-4 rounded-full float-left"><i class="fa-solid fa-envelope"></i></span>
+                            <p class="text-left"><small>EMAIL US</small><br><a href="mailto:rehomes@inquiry.com" class="gold text-left">rehomes@inquiry.com</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
