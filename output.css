@@ -462,7 +462,6 @@ label{
 button{
   font-size:11px;
   border-radius: 0.125rem;
-  border-width: 1px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 2rem;
@@ -475,14 +474,12 @@ button{
 
 .btn{
   background-color:#BDA588;
-  border-color:#BDA588;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
 .btn:hover{
   background-color:#ac8d68;
-  border-color:#ac8d68;
   transition:all linear .3s;
 }
 
@@ -683,6 +680,14 @@ button{
 
 .right-0 {
   right: 0px;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-20 {
@@ -909,10 +914,6 @@ button{
   border-width: 1px;
 }
 
-.border-0 {
-  border-width: 0px;
-}
-
 .border-t-4 {
   border-top-width: 4px;
 }
@@ -1035,6 +1036,11 @@ button{
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1050,6 +1056,10 @@ button{
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pt-12 {
@@ -1068,6 +1078,14 @@ button{
   padding-top: 1.5rem;
 }
 
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1076,12 +1094,21 @@ button{
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .align-middle {
   vertical-align: middle;
 }
 
 .font-custom_body {
   font-family: 'Inter',sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-6xl {
@@ -1179,7 +1206,7 @@ button{
 
 @media only screen and (max-width:768px){
   h1{
-    font-size:40px;
+    font-size:34px;
   }
 
   h2{
@@ -1215,8 +1242,26 @@ button{
 
 /*sidebar*/
 
-#sidebar_button{
-  border: none !important;
+.sidebar_show{
+  transform:translateX(0%);
+  transition: ease-in-out .5s ;
+}
+
+.sidebar_hide{
+  transform:translateX(100%);
+  transition: ease-in-out .5s ;
+}
+
+/*contact overlay*/
+
+.contact_overlay_show{
+  transform:translateY(0%);
+  transition: ease-in-out .5s;
+}
+
+.contact_overlay_hide{
+  transform:translateY(-100%);
+  transition: ease-in-out .5s;
 }
 
 /*homepage-intro*/
@@ -1358,6 +1403,26 @@ button{
   }
 }
 
+@keyframes move_left{
+  from{
+    transform: translateX(-100%);
+  }
+
+  to{
+    transform: translate(0%);
+  }
+}
+
+@keyframes move_right{
+  from{
+    transform: translateX(100%);
+  }
+
+  to{
+    transform: translate(0%);
+  }
+}
+
 .hover\:border-red-200:hover {
   --tw-border-opacity: 1;
   border-color: rgb(254 202 202 / var(--tw-border-opacity));
@@ -1438,6 +1503,10 @@ button{
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 }
 

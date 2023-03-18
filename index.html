@@ -13,7 +13,7 @@
 </head>
 <body class="antialiased font-custom_body">
 
-<nav class="w-full bg-transparent absolute 0 z-20 ">
+<nav class="w-full bg-transparent absolute  z-20 main_sidebar py-5">
     <div class="flex justify-between container mx-auto w-full items-center">
         <a href=""><img src="./img/logo.svg" class="h-auto  w-56"></a>
         <ul class="lg:gap-x-10 md:gap-x-10 flex items-center text-white">
@@ -27,16 +27,16 @@
             </li>
             <li class="navbar-link hidden md:flex font-medium text-sm hover:text-brand-gold">Properties</li>
             <li class="navbar-link hidden md:flex font-medium text-sm hover:text-brand-gold">Blog</li>
-            <li class="navbar-link hidden md:flex font-medium text-sm hover:text-brand-gold">Contact</li>
-            <li class="navbar-link md:hidden flex"> <button id="sidebar_button border-0" onclick="sidebarBtnFunction()"><i class="fa-solid fa-bars"></i></button></li>
+            <li class="navbar-link hidden md:flex font-medium text-sm hover:text-brand-gold cursor-pointer" onclick="contactOverlayShow();">Contact</li>
+            <li class="navbar-link md:hidden flex"> <span id="sidebar_button cursor-pointer" onclick="sidebarShowBtn()"><i class="fa-solid fa-bars"></i></span></li>
         </ul>
        
     </div>
 </nav>
 
-<div class="bg-white fixed z-30 right-0 w-full h-full hidden" id="sidebar">
-    <button onclick="sidebarBtnFunction()">X</button>
-    <ul class="flex h-full bg-gray-200 flex-col justify-center gap-10">
+<div class="bg-white fixed z-30 right-0 w-full h-full sidebar_hide" id="sidebar">
+    <button onclick="sidebarHideBtn()" class=" absolute right-2 p-5"><i class="fa-solid fa-x text-2xl"></i></button>
+    <ul class="flex h-full bg-gray-200 flex-col justify-center gap-10 text-right pr-5">
         <li><h3>Home</h3></li>
         <li><h3>About</h3></li>
         <li><h3>Properties</h3></li>
@@ -48,7 +48,7 @@
     <section>
         <div class="min-h-screen relative bg-cover bg-no-repeat" style="background-image: url('./img/img1.jpg')
         ;">
-            <div class="min-h-screen flex justify-center items-center text-white flex-col text-center relative" style="background-color:#173e6299;">
+            <div class="min-h-screen flex justify-center items-center text-white flex-col text-center relative pb-20 md:pb-0" style="background-color:#173e6299;">
                 <p class="uppercase font-semibold text-sm letter-spacing">Rehomes Housing Developement</p>
                 <h1 class="py-6" style="max-width:768px;">The first major international smart is comming</h1>
                 <button class="btn">View Project</button>
@@ -298,6 +298,12 @@
         <div class="flex justify-center mt-12 w-full container mx-auto">
             <button class="btn">View Project</button>
         </div>
+    </section>
+
+    <section class="bg-white fixed z-30 right-0 w-full h-full contact_overlay_hide top-0" id="contact_overlay" >
+        <button onclick="contactOverlayHide();">X</button>
+    </section>
+
     </section>
     <footer class="footer bg-cover bg-bottom bg-no-repeat" style="background-image: url('./img/img1.jpg');">
         <div class="footer-container ">
